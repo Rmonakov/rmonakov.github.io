@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Монаков Роман Юрійович</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 30px;
+        }
+        .profile-info {
+            flex: 2;
+        }
+        .profile-photo {
+            flex: 1;
+            text-align: right;
+        }
+        .profile-photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin: 25px 0 15px 0;
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin: 15px 0 10px 0;
+            color: #2c3e50;
+        }
+        h4 {
+            font-size: 1.1rem;
+            margin: 10px 0 5px 0;
+            color: #7f8c8d;
+        }
+        p, li {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .skills li {
+            background-color: #e9f7fe;
+            color: #3498db;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .position {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 15px 0;
+        }
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+        }
+        .date-location {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .duties {
+            padding-left: 20px;
+        }
+        .duties li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 8px;
+        }
+        .duties li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+        .certificates {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .certificate-item {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            flex: 1 1 250px;
+        }
+        .languages {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .language-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            flex: 1 1 150px;
+        }
+        .language-name {
+            font-weight: bold;
+        }
+        .language-level {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+            .profile-photo {
+                margin-bottom: 20px;
+            }
+            .profile-photo img {
+                width: 120px;
+                height: 120px;
+            }
+            .contact-info, .skills ul {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-info">
+                <h1>Монаков Роман Юрійович</h1>
+                <div class="position">CDTO Боярської ТГ, Завідувач сектору цифровізації</div>
+                <div class="contact-info">
+                    <div>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span>м. Боярка, Київська область</span>
+                    </div>
+                    <div>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                        </svg>
+                        <a href="tel:+380633549200">+38(063)354-92-00</a>
+                    </div>
+                    <div>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                        </svg>
+                        <a href="mailto:monakov.rom@gmail.com">monakov.rom@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-photo">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAtAC0AAD/4QMkRXhpZgAATU0AKgAAAAgACQEPAAIAAAAKAAAAegEQAAIAAAALAAAAhAESAAMAAAABAAEAAAEaAAUAAAABAAAAkAEbAAUAAAABAAAAmAEoAAMAAAABAAIAAAExAAIAAAAKAAAAoAEyAAIAAAAUAAAAqodpAAQAAAABAAAAvgAAAABQYW5hc29uaWMAREMtTFgxMDBNMgAAAAAAtAAAAAEAAAC0AAAAAVZlci4xLjEgIAAyMDIzOjA4OjI2IDE3OjM4OjAwAAAogpoABQAAAAEAAAKkgp0ABQAAAAEAAAKsiCIAAwAAAAEAAQAAiCcAAwAAAAEBkAAAiDAAAwAAAAEAAQAAiDEABAAAAAEAAAGQkAAABwAAAAQwMjMxkAMAAgAAABQAAAK0kAQAAgAAABQAAALIkBAAAgAAAAcAAALckBEAAgAAAAcAAALkkBIAAgAAAAcAAALskQEABwAAAAQBAgMAkQIABQAAAAEAAAL0kgQACgAAAAEAAAL8kgUABQAAAAEAAAMEkgcAAwAAAAEABQAAkggAAwAAAAEACgAAkgkAAwAAAAEAEAAAkgoABQAAAAEAAAMMkpAAAgAAAAQzNjYAkpEAAgAAAAQzNjYAkpIAAgAAAAQzNjYAoAAABwAAAAQwMTAwoAEAAwAAAAEAAQAAoAIABAAAAAEAAADIoAMABAAAAAEAAADIohcAAwAAAAEAAgAAowAABwAAAAEDAAAAowEABwAAAAEBAAAApAEAAwAAAAEAAQAApAIAAwAAAAEAAQAApAMAAwAAAAEAAQAApAQABQAAAAEAAAMUpAUAAwAAAAEANgAApAYAAwAAAAEAAAAApAcAAwAAAAEAAgAApAgAAwAAAAEAAAAApAkAAwAAAAEAAAAApAoAAwAAAAEAAQAAAAAAAAAAAAEAAABQAAAADgAAAAUyMDIzOjA4OjI2IDE3OjM4OjAwADIwMjM6MDg6MjYgMTc6Mzg6MDAAKzAyOjAwAAArMDI6MDAAACswMjowMAAAAAAABAAAAAEAAAAAAAAAAQAAAvkAAAEAAAAAeQAAAAUAAAAAAAAAAf/hCuZodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDYuMC4wIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6YXV4PSJodHRwOi8vbnMuYWRvYmUuY29tL2V4aWYvMS4wL2F1eC8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgYXV4OlNlcmlhbE51bWJlcj0iWEZMMjEwMTE0MDAyMSIgcGhvdG9zaG9wOkRhdGVDcmVhdGVkPSIyMDIzLTA4LTI2VDE3OjM4OjAwLjM2NiIgeG1wOlJhdGluZz0iMCIgeG1wOk1vZGlmeURhdGU9IjIwMjMtMDgtMjZUMTc6Mzg6MDAuMzY2IiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMy0wOC0yNlQxNzozODowMC4zNjYiIHhtcDpDcmVhdG9yVG9vbD0iVmVyLjEuMSAgIiB4bXBNTTpJbnN0YW5jZUlEPSJ1dWlkOmQ4NzRlNzg4LTI1ZjgtNGQxZC05NDdhLTZlNzc4MjJiNWQ2YSIvPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDw/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" alt="Фото Монаков Роман" />
+            </div>
+        </header>
+
+        <section class="skills">
+            <h2>Ключові навички</h2>
+            <ul>
+                <li>Цифрова трансформація</li>
+                <li>Стратегічне управління</li>
+                <li>Управління проектами</li>
+                <li>Кібербезпека</li>
+                <li>Автоматизація процесів</li>
+                <li>Електронне врядування</li>
+                <li>Стратегічне партнерство</li>
+                <li>Електронний документообіг</li>
+            </ul>
+        </section>
+
+        <section class="experience">
+            <h2>Досвід роботи</h2>
+            
+            <div class="experience-item">
+                <h3>CDTO Боярської ТГ, Завідувач сектору цифровізації Виконавчого комітету</h3>
+                <a href="https://boyarka-rada.gov.ua/" target="_blank">Боярська міська рада</a>
+                <div class="date-location">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                    </svg>
+                    ВЕРЕСЕНЬ 2022 - ТЕПЕРІШНІЙ ЧАС
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-left: 10px;">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>
+                    БОЯРКА
+                </div>
+                <ul class="duties">
+                    <li>Розробив та впровадив комплексну стратегію цифрової трансформації громади, що підвищило ефективність роботи виконавчих органів на 30%</li>
+                    <li>Успішно провів аудит інформаційної системи та оптимізував IT-інфраструктуру, що зменшило витрати на 25%</li>
+                    <li>Впровадив електронний документообіг, що скоротило час обробки документів на 40% та зменшило використання паперу на 60%</li>
+                    <li>Реалізував заходи з кібербезпеки, що запобігли потенційним інцидентам та забезпечили надійний захист інформаційних систем</li>
+                    <li>Організував навчання персоналу з питань цифрової грамотності, підвищивши компетенції співробітників у використанні IT-систем</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Координатор цифрових систем (волонтерська діяльність)</h3>
+                <a href="https://boyarka-rada.gov.ua/" target="_blank">Гуманітарний штаб Боярської громади</a>
+                <div class="date-location">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                    </svg>
+                    ЛЮТИЙ 2022 - ВЕРЕСЕНЬ 2022
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-left: 10px;">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>
+                    БОЯРКА
+                </div>
+                <ul class="duties">
+                    <li>Розробив цифрову систему управління логістичним центром, що пришвидшила доставку гуманітарної допомоги на 65%</li>
+                    <li>Створив та впровадив систему складського обліку, що зменшила втрати гуманітарної допомоги на 40% та покращила прозорість розподілу</li>
+                    <li>Реалізував онлайн-систему подання заявок, яка охопила понад 5000 бенефіціарів та оптимізувала процес надання допомоги</li>
+                    <li>Координував роботу волонтерів, що дозволило обробляти у 3 рази більше звернень щодня порівняно з початковими показниками</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Пост-продакшн продюсер</h3>
+                <a href="https://starlight.digital/" target="_blank">Star Light Media (Новий Канал)</a>
+                <div class="date-location">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                    </svg>
+                    2015 - 2021
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-left: 10px;">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>
+                    КИЇВ
+                </div>
+                <ul class="duties">
+                    <li>Автоматизував виробничий процес з використанням Google Docs та scripts, що зменшило час на обробку проектів на 35%</li>
+                    <li>Оптимізував систему архівування та документообігу, що дозволило на 70% швидше знаходити та відновлювати архівні матеріали</li>
+                    <li>Впровадив нову систему формування звітності, що підвищила точність даних та зменшила кількість помилок на 45%</li>
+                    <li>Розробив методологію координації роботи між департаментами, що прискорило терміни виконання проектів на 25%</li>
+                    <li>Спланував та успішно реалізував понад 50 телевізійних проектів, дотримуючись бюджету та термінів</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Освіта та додаткова освіта</h2>
+            
+            <div class="education-item">
+                <h3>Університет менеджменту освіти</h3>
+                <h4>Публічне управління та адміністрування</h4>
+                <div class="date-location">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                    </svg>
+                    2024 - ТЕПЕРІШНІЙ ЧАС
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-left: 10px;">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>
+                    КИЇВ
+                </div>
+                <p>Навчання за спеціальністю "Публічне управління та адміністрування".</p>
+            </div>
+            
+            <div class="education-item">
+                <h3>КНЕУ ім. Вадима Гетьмана</h3>
+                <h4>Магістр, Факультет "Економіка та управління"</h4>
+                <div class="date-location">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                    </svg>
+                    2018 - 2020
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-left: 10px;">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>
+                    КИЇВ
+                </div>
+                <p>Спеціалізація: "Підприємство, торгівля та біржова діяльність"</p>
+            </div>
+            
+            <div class="education-item">
+                <h3>CDTO campus</h3>
+                <h4>Курс "Цифрова трансформація у публічному врядуванні"</h4>
+                <div class="date-location">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                    </svg>
+                    2024
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-left: 10px;">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>
+                    ОНЛАЙН
+                </div>
+                <p>Поглиблене вивчення методів та інструментів цифрової трансформації у сфері публічного управління, сучасних тенденцій розвитку електронного урядування та цифрового врядування.</p>
+            </div>
+            
+            <div class="education-item">
+                <h3>Cisco Networking Academy</h3>
+                <h4>Cybersecurity & Networking</h4>
+                <div class="date-location">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                    </svg>
+                    2022 - 2023
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" style="margin-left: 10px;">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>
+                    ОНЛАЙН
+                </div>
+                <p>Спільно з University of Information Technology and Management (Польща). Курси: Introduction to Cybersecurity, Cyber Threat Management, Endpoint Security, Networking Basics.</p>
+            </div>
+        </section>
+
+        <section class="certificates-languages">
+            <h2>Сертифікати та мови</h2>
+            
+            <div class="certificates">
+                <div class="certificate-item">
+                    <h3>Кіберзахист ОКІІ</h3>
+                    <div class="date-location">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                        </svg>
+                        2022
+                    </div>
+                    <p>Сертифікат "Кіберзахист ОКІІ для фахівців з інформаційної безпеки державного сектору" від Держспецзв'язку</p>
+                </div>
+                
+                <div class="certificate-item">
+                    <h3>Відновлення економіки територіальних громад</h3>
+                    <div class="date-location">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                        </svg>
+                        2023
+                    </div>
+                    <p>Сертифікат "Інструменти відновлення та розвитку економіки територіальних громад"</p>
+                </div>
+                
+                <div class="certificate-item">
+                    <h3>Школа стратегічного розвитку громади</h3>
+                    <div class="date-location">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                        </svg>
+                        2023
+                    </div>
+                    <p>Сертифікат за активну участь в "Школі стратегічного розвитку громади"</p>
+                </div>
+            </div>
+
+            <div class="languages">
+                <div class="language-item">
+                    <div class="language-name">Українська мова</div>
+                    <div class="language-level">Рідна</div>
+                </div>
+                <div class="language-item">
+                    <div class="language-name">Англійська мова</div>
+                    <div class="language-level">Upper-Intermediate (B2)</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
